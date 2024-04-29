@@ -1,4 +1,4 @@
-# The task of creating an integer program1
+# The task of creating an integer program
 print ("================================")
 print ("        Taufikurahman           ")
 print ("         41823010025            ")
