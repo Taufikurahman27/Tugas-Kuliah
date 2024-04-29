@@ -2,7 +2,7 @@
 print ("================================")
 print ("        Taufikurahman           ")
 print ("         41823010025            ")
-print ("    Tugas2 Pemrograman Lanjut   ")
+print ("   Task 2 Advanced programming  ")
 print ("================================")
 
 
