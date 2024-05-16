@@ -1,7 +1,32 @@
-#Big task 1 is to create a neo matrix program
-print("===================================")
-print("            Taufikurahman          ")
-print("             41823010025           ")
-print("       TB1-Advanced Programming    ")
-print("===================================")
+import re
+
+print("================================")
+print("        Taufikurahman           ")
+print("         41823010025            ")
+print("     Advanced Programming       ")
+print("        TB1 NEOMATRIX           ")
+print("================================")
+
+ukuran_input_pertama = input().rstrip().split()
+n = int(ukuran_input_pertama[0])
+m = int(ukuran_input_pertama[1])
+
+matriks = []
+for _ in range(n):
+    item_matriks = input()
+    matriks.append(item_matriks)
+
+hasil_dekode = ""
+for i in range(m):
+    for j in range(n):
+        try:
+            hasil_dekode += matriks[j][i]
+        except IndexError:
+            pass
+pola = r'(?<=[\w])[^\w]+(?=[\w])'
+cocokan = re.findall(pola, hasil_dekode)
+
+for x in cocokan:
+    hasil_dekode = hasil_dekode.replace(x, ' ', 1)
+print(hasil_dekode)
 
