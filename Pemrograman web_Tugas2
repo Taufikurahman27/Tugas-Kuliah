@@ -1,0 +1,31 @@
+[08.19, 17/10/2024] pik: <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.8">
+        <title>Document</title>
+        <link rel="stylesheet" type = "text/css" href = "body {.css"/>
+    </head>
+    <body>
+       <h1>Daftar Menu MCD<em> Promo Terbatas </em>:</h1>
+       <ul>
+    <li>Ayam: 8.000</li>
+    <li>Burger: 12.000
+        <ul>
+            <li>Ayam pedas: 12.000</li>
+            <li>Burger jumbo: 15.000</li>
+            <li>Minuman segar: 8.000</li>
+           </ul>
+           </li>
+           <li>Paket panas 1: 25.000</li>
+           <li>Kentang: 6.000</li>
+           <li>Dessert<em> isi keju coklat: 5.000</em></li>
+           </ul>
+        <p><a class = "nodec"
+        href = "https://www.alfacart.com"
+        Go to the alfacart store</a></p>
+    </li>
+</ul>
+</body>
+</html>
+[08.19, 17/10/2024] pik: 
