@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perhitungan Nilai Mahasiswa</title>
+    <script>
+        function hitungNilai() {
+            // Mendapatkan nilai input
+            var presensi = parseFloat(document.getElementById("presensi").value) || 0;
+            var tugas = parseFloat(document.getElementById("tugas").value) || 0;
+            var uts = parseFloat(document.getElementById("uts").value) || 0;
+            var uas = parseFloat(document.getElementById("uas").value) || 0;
+
+            // Menghitung nilai akhir
+            var nilaiAkhir = (presensi * 0.1) + (tugas * 0.2) + (uts * 0.3) + (uas * 0.4);
+            
+            // Menentukan huruf nilai
+            var huruf;
+            if (nilaiAkhir > 80) {
+                huruf = 'A';
+            } else if (nilaiAkhir > 75) {
+                huruf = 'B+';
+            } else if (nilaiAkhir > 70) {
+                huruf = 'B';
+            } else if (nilaiAkhir > 65) {
+                huruf = 'B-';
+            } else if (nilaiAkhir > 60) {
+                huruf = 'C+';
+            } else if (nilaiAkhir > 55) {
+                huruf = 'C';
+            } else if (nilaiAkhir > 50) {
+                huruf = 'C-';
+            } else if (nilaiAkhir > 30) {
+                huruf = 'D';
+            } else {
+                huruf = 'E';
+            }
+
+            // Menampilkan hasil
+            document.getElementById("nilaiAkhir").innerHTML = "Nilai Akhir: " + nilaiAkhir.toFixed(2);
+            document.getElementById("hurufNilai").innerHTML = "Huruf Nilai: " + huruf;
+        }
+    </script>
+</head>
+<body>
+    <h1>Perhitungan Nilai Mahasiswa</h1>
+    
+    <label for="presensi">Presensi (10%): </label>
+    <input type="number" id="presensi" placeholder="Nilai Presensi"><br><br>
+
+    <label for="tugas">Tugas (20%): </label>
+    <input type="number" id="tugas" placeholder="Nilai Tugas"><br><br>
+
+    <label for="uts">UTS (30%): </label>
+    <input type="number" id="uts" placeholder="Nilai UTS"><br><br>
+
+    <label for="uas">UAS (40%): </label>
+    <input type="number" id="uas" placeholder="Nilai UAS"><br><br>
+
+    <button onclick="hitungNilai()">Hitung</button>
+
+    <p id="nilaiAkhir"></p>
+    <p id="hurufNilai"></p>
+</body>
+</html>
